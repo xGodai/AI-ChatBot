@@ -40,16 +40,19 @@ footer {
     overflow: hidden;
     background-color: var(--secondary-background-color);
     color: black;
+    font-weight: 700;
 }
 
 .chat-messages {
     flex: 1;
     padding: 15px;
     overflow-y: auto;
+    font-weight: 700;
 }
 
 .message {
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .message.user {
@@ -59,18 +62,21 @@ footer {
 .chat-input {
     display: flex;
     border-top: 1px solid #ccc;
+    font-weight: 700;
 }
 
 .chat-input input {
     border: none;
     flex: 1;
     padding: 10px;
+    font-weight: 700;
 }
 
 .chat-input button {
     border: none;
     background: #ffffff;
     padding: 10px 20px;
+    font-weight: 700;
 }
 
 .social-links {
