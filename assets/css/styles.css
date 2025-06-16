@@ -7,8 +7,11 @@
     --primary-text-color: #ffffff;
     --primary-background-color: #112223;
     --secondary-text-color: black;
-    --secondary-background-color: #f8f9fa;
+    --secondary-background-color: #70797a;
 }
+
+
+/* General Styles */
 
 body {
     padding-top: 50px;
@@ -26,6 +29,8 @@ p {
 footer {
     padding-top: 25px;
 }
+
+/* Chatbox Styles */
 
 .chatbox {
     max-width: 500px;
@@ -48,6 +53,7 @@ footer {
     padding: 15px;
     overflow-y: auto;
     font-weight: 700;
+    scroll-behavior: smooth;
 }
 
 .message {
@@ -61,8 +67,9 @@ footer {
 
 .chat-input {
     display: flex;
-    border-top: 1px solid #ccc;
     font-weight: 700;
+    padding: 10px;
+    color: black;
 }
 
 .chat-input input {
@@ -70,14 +77,23 @@ footer {
     flex: 1;
     padding: 10px;
     font-weight: 700;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    border: 6px solid #000000;
+    border-radius: 22px;
 }
 
 .chat-input button {
     border: none;
-    background: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 20px;;
     font-weight: 700;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    border: 6px solid #000000;
+    border-radius: 22px;
 }
+
+/* Footer Styles */
 
 .social-links {
     position: fixed;
@@ -85,4 +101,11 @@ footer {
     right: 10px;
     color: var(--primary-text-color);
     font-size: 32px;
+}
+
+/* Social Media Icons */
+
+.fa-brands {
+    margin: 0 5px;
+    color: var(--primary-text-color);
 }
