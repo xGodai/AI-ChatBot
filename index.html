@@ -14,17 +14,29 @@
 
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <header>
-
+        <div class="text-center my-5">
+            <h1>AI Chat - Bot</h1>
+            <h3>Simple AI Chat Bot</h3>
+        </div>
     </header>
 
     <main>
-
+        <div class="chatbox mt-5 shadow col-3 mx-auto">
+    <div class="chat-messages" id="chatMessages">
+      <div class="message">Hi there! How can I help?</div>
+      <div class="message user">What's the weather like today?</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
     </main>
 
-    <footer>
+    <footer class="mt-auto">
         <p>&copy; 2023 AI Chat - Bot. All rights reserved.</p>
     </footer>
 
@@ -39,7 +51,7 @@
     <!--End Font Awesome-->
 
     <!-- Load Custom JS -->
-     <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/script.js"></script>
     <!--End Custom JS-->
 </body>
 
