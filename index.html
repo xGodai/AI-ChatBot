@@ -17,27 +17,34 @@
 <body class="d-flex flex-column min-vh-100">
 
     <header>
-        <div class="text-center my-5">
-            <h1>AI Chat - Bot</h1>
+        <div class=" container-lg text-center my-5">
+            <h1>AI Chat - Bot <i class="fa-duotone fa-solid fa-robot"></i></h1>
             <h3>Simple AI Chat Bot</h3>
         </div>
     </header>
 
     <main>
-        <div class="chatbox mt-5 shadow col-3 mx-auto">
-    <div class="chat-messages" id="chatMessages">
-      <div class="message">Hi there! How can I help?</div>
-      <div class="message user">What's the weather like today?</div>
-    </div>
-    <div class="chat-input">
-      <input type="text" id="chatInput" placeholder="Type a message..." />
-      <button onclick="sendMessage()">Send</button>
-    </div>
-  </div>
+        <div class="chatbox mt-5 shadow col-12 col-sm-6 col-lg-4 g-4 mx-auto">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message">Hi there! How can I help?</div>
+                <div class="message user">What's the weather like today?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type a message..." />
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
     </main>
 
     <footer class="mt-auto">
-        <p>&copy; 2023 AI Chat - Bot. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Visit Our Instagram Page (Opens New Tab)"><i
+                    class="fa-brands fa-instagram" rel="noopener"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Visit Our Facebook Page (Opens New Tab)"><i
+                    class="fa-brands fa-square-facebook" rel="noopener"></i></a>
+            <a href="https://x.com" target="_blank" aria-label="Visit Our X Page (Opens New Tab)"><i
+                    class="fa-brands fa-x-twitter" rel="noopener"></i></a>
+        </div>
     </footer>
 
     <!-- Load Bootstrap JS -->
