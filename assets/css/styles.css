@@ -67,14 +67,17 @@ footer {
 
 .chat-input {
     display: flex;
-    font-weight: 700;
+    gap: 8px;
+    width: 100%;
     padding: 10px;
     color: black;
+    /*justify-content: space-evenly;*/
 }
 
 .chat-input input {
     border: none;
     flex: 1;
+    min-width: 0;
     padding: 10px;
     font-weight: 700;
     background-color: var(--primary-background-color);
@@ -85,7 +88,8 @@ footer {
 
 .chat-input button {
     border: none;
-    padding: 10px 20px;;
+    flex-shrink: 0;
+    padding: 10px 20px;
     font-weight: 700;
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
