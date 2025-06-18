@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-md-auto" style="display: inline-flex">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="Current page" href="index.html">
+                        <a class="nav-link active" aria-current="current page" href="index.html">
                             <h4>Chat AI</h4>
                         </a>
                     </li>
@@ -62,7 +62,7 @@
     <main>
 
         <!-- Chatbox Section -->
-        <section class="chatbox mt-5 shadow col-12 col-sm-6 col-lg-4 g-4 mx-auto">
+        <div class="chatbox mt-5 shadow col-12 col-sm-6 col-lg-4 g-4 mx-auto">
             <div class="chatbox-header">
                 <select id="ai-personality" class="personality-dropdown" aria-label="Select AI Personality">
                     <option value="friendly">Friendly</option>
@@ -77,15 +77,15 @@
                 <div class="message user">What's the weather like today?</div>
             </div>
             <div class="chat-input" aria-label="Chat Input">
-                <input type="text" id="chatInput" placeholder="Type a message..." />
+                <input type="text" id="chatInput" placeholder="Type a message...">
                 <button onclick="sendMessage()">Send</button>
             </div>
-        </section>
+        </div>
         <!-- End Chatbox Section -->
 
-        <section class="col-12 col-sm-6 col-lg-2 g-4 mx-auto row align-items-start">
+        <div class="col-12 col-sm-6 col-lg-2 g-4 mx-auto row align-items-start">
             <button type="button" class="reset-button btn btn-dark">Reset Chat</button>
-        </section>
+        </div>
     </main>
 
     <!-- Footer Section -->
