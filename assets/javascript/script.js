@@ -1,3 +1,4 @@
+// Chat functionality
 function sendMessage() {
   const input = document.getElementById("chatInput");
   const messages = document.getElementById("chatMessages");
