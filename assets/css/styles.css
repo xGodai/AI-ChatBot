@@ -33,7 +33,7 @@ footer {
 /* Navbar Styles */
 .navbar-brand,
 .navbar-nav .nav-link {
-  background: transparent;
+  background: var(--primary-background-color);
   border: none;
   font-family: var(--primary-font);
   color: var(--primary-color);
@@ -164,7 +164,7 @@ footer {
     margin-top: 40px;
     font-weight: bold;
     background-color: var(--secondary-background-color);
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     border: 6px solid #000000;
     border-radius: 22px;
     cursor: pointer;
