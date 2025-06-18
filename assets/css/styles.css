@@ -41,6 +41,7 @@ footer {
 
 .navbar-brand:hover,
 .navbar-nav .nav-link:hover {
+  transition: color 1s ease;
   color: var(--secondary-background-color);
 }
 .navbar-nav .nav-link.active {
@@ -72,26 +73,6 @@ footer {
 
 /* Chatbox Styles */
 
-.chatbox-header {
-  padding: 0;
-  margin: 0;
-  background: var(--secondary-background-color);
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-}
-
-.personality-dropdown {
-  border: none;
-  background: var(--secondary-background-color);
-  font-size: 1rem;
-  padding: 1rem;
-  outline: none;
-  width: 100%;
-  box-sizing: border-box;
-  font-weight: bold;
-}
-
 .chatbox {
     max-width: 500px;
     margin: auto;
@@ -107,6 +88,27 @@ footer {
     color: black;
     font-weight: bold;
 }
+
+.chatbox-header {
+  padding: 0;
+  margin: 0;
+  background: var(--secondary-background-color);
+  width: 100%;
+  align-items: center;  
+  font-size: 1rem;
+  text-align: right;
+}
+
+.personality-dropdown {
+  border: none;
+  background: var(--secondary-background-color);
+  font-size: 1rem;
+  padding: 1rem;
+  outline: none;
+  width: max-content;
+  box-sizing: border-box;
+}
+
 
 .chat-messages {
     flex: 1;
@@ -148,7 +150,6 @@ footer {
 }
 
 .chat-input button {
-    border: none;
     flex-shrink: 0;
     padding: 10px 20px;
     font-weight: 700;
@@ -157,15 +158,37 @@ footer {
     border: 6px solid #000000;
     border-radius: 22px;
 }
+/* Reset Button Styles */
+
+.reset-button {
+    margin-top: 40px;
+    font-weight: bold;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    border: 6px solid #000000;
+    border-radius: 22px;
+    cursor: pointer;
+    max-width: 500px;
+}
 
 /* Footer Styles */
 
+.footer {
+    margin-top: 5px;
+}
+
 .social-links {
-    position: fixed;
     bottom: 10px;
     right: 10px;
     color: var(--primary-text-color);
     font-size: 32px;
+}
+
+.social-links i {
+    transition: color 1s ease;
+}
+.social-links i:hover {
+    color: var(--secondary-background-color);
 }
 
 /* Social Media Icons */
@@ -175,10 +198,3 @@ footer {
     color: var(--primary-text-color);
 }
 
-
-@media (min-width: 2560px) {
-  /* Your styles for 2560+ monitors here */
-  body {
-    font-size: 1.2rem;
-  }
-}
